@@ -1,15 +1,26 @@
-# Boleta Studio 0.10
+# Boleta Studio 0.10.1
 
-**[Descargar actualización 0.10 para Android](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.10.apk)**
+**[Descargar actualización 0.10.1 para Android](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.10.1.apk)**
 
-[Descargar el mismo APK en ZIP](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.10.zip)
+[Descargar el mismo APK en ZIP](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.10.1.zip)
 
-Esta versión mejora las filas de productos, la línea inferior, el tamaño de letra, el formato del resumen, la fecha del PDF y los cálculos de IGV, pago y vuelto. Conserva las plantillas y el editor de la versión anterior.
+Esta actualización corrige el espacio grande entre los datos del negocio y la fecha. Conserva las mejoras de productos, líneas, letra, resumen, fecha del PDF, IGV, pago y vuelto de 0.10.
+
+## Quitar el espacio en blanco
+
+1. Instala la actualización y abre tu boleta en **2. Vista previa**.
+2. La app revisa el hueco de los diseños anteriores y lo reduce cuando es grande y no contiene otros elementos visibles.
+3. También puedes usar **Plantillas → Quitar espacio antes de la fecha**. **Deshacer** recupera el espaciado anterior al usar esta opción.
+4. Pulsa **Guardar** para conservar el ajuste en tu plantilla con nombre.
+
+La fecha se acerca al encabezado y los productos y totales suben con ella. Se conservan textos, precios, imágenes y posiciones horizontales. Después del ajuste, el alto del encabezado se adapta al texto al volver a editarlo. El espaciado corregido se comparte entre vista previa y PDF.
+
+La comprobación automática conserva los espacios que ya eran pequeños y evita cubrir textos o separadores colocados expresamente en esa zona.
 
 ## Instalar como actualización
 
 1. Abre el enlace del APK en Chrome desde tu celular y acepta la descarga.
-2. En Chrome, abre **⋮ → Descargas** y toca `Boleta-Studio-0.10.apk`.
+2. En Chrome, abre **⋮ → Descargas** y toca `Boleta-Studio-0.10.1.apk`.
 3. Si Android solicita permiso para instalar desde Chrome, concédelo y vuelve al instalador.
 4. Pulsa **Actualizar**. Conserva instalada la aplicación anterior para mantener tus datos.
 
@@ -56,9 +67,9 @@ La foto sigue siendo una referencia. La salida utiliza el documento limpio y edi
 
 ## Validación
 
-Versión `0.10.0`, código `12`, paquete `com.boleta.editor`, arquitectura `arm64-v8a`. Compilación y firma verificadas; **118 pruebas automatizadas aprobadas**, sin fallos ni errores. Lint sin errores (46 advertencias).
+Versión `0.10.1`, código `13`, paquete `com.boleta.editor`, arquitectura `arm64-v8a`. Compilación y firma verificadas; **129 pruebas automatizadas aprobadas**, sin fallos ni errores. Lint sin errores (46 advertencias).
 
-Se comprobaron cálculos, fecha local, conservación de datos, movimientos, altas/bajas de productos, alineación del pie, Deshacer y exportación desde la interfaz Android. El PDF de prueba es válido y la imagen extraída de él coincide **píxel por píxel** con el PNG de la vista previa limpia.
+Se comprobaron las alturas reservadas y los desplazamientos que causaban el hueco, el ajuste automático y manual, Deshacer, guardado y edición posteriores. También se mantienen las pruebas de cálculos, fecha local, datos, movimientos, productos, pie y PDF. El PDF de prueba es válido y la imagen extraída de él coincide **píxel por píxel** con el PNG de la vista previa limpia.
 
 Queda pendiente la prueba en un teléfono físico. La configuración y prueba de la impresora POS-8001DD se posponen por petición del usuario.
 

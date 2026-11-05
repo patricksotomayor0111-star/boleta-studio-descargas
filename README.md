@@ -1,47 +1,65 @@
-# Boleta Studio 0.9
+# Boleta Studio 0.10
 
-**[Descargar actualización 0.9 para Android](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.9.apk)**
+**[Descargar actualización 0.10 para Android](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.10.apk)**
 
-[Descargar el mismo APK en ZIP](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.9.zip)
+[Descargar el mismo APK en ZIP](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.10.zip)
 
-Conserva el editor limpio y editable de 0.8. La importación completa utiliza la posición de las palabras para reconocer las columnas y filas de cada foto: títulos, orden, ancho y alineación. Si la foto tiene **CODIGO / DESCRIPCION / CANT / IMPORTE FINAL**, la plantilla utiliza esas columnas sin añadir U.M., precio unitario ni descuento. También reconoce formatos con cantidad al principio o descripción encima de los valores.
+Esta versión mejora las filas de productos, la línea inferior, el tamaño de letra, el formato del resumen, la fecha del PDF y los cálculos de IGV, pago y vuelto. Conserva las plantillas y el editor de la versión anterior.
 
 ## Instalar como actualización
 
 1. Abre el enlace del APK en Chrome desde tu celular y acepta la descarga.
-2. En Chrome, abre **⋮ → Descargas** y toca `Boleta-Studio-0.9.apk`.
-3. Si Android solicita permiso para instalar desde Chrome, concédelo y regresa al instalador.
-4. Pulsa **Actualizar**, conservando instalada la aplicación anterior y sus datos.
+2. En Chrome, abre **⋮ → Descargas** y toca `Boleta-Studio-0.10.apk`.
+3. Si Android solicita permiso para instalar desde Chrome, concédelo y vuelve al instalador.
+4. Pulsa **Actualizar**. Conserva instalada la aplicación anterior para mantener tus datos.
 
 Android ARM64, Android 6 o posterior, mismo paquete y firma que las versiones anteriores. El ZIP contiene el mismo APK y debe extraerse primero. Los avisos automáticos dentro de la app siguen pendientes.
 
-## Ajustar la boleta que ya tienes
+## Productos encima de la línea
 
-1. Abre tu boleta y pulsa **Plantillas → Ajustar distribución a la foto → Ajustar**.
-2. La app usa su foto de referencia guardada y ajusta la tabla, las filas de fecha/boleta, caja/cajero y los totales que pueda reconocer. Conserva los nombres y precios actuales; reemplaza esos ajustes de distribución.
-3. Revisa **2. Vista previa**. Toca los textos para corregirlos; usa **Mover** para colocar textos o líneas y el punto azul para ajustar el ancho.
-4. En **Plantillas → Columnas de esta boleta** puedes corregir títulos, orden, alineación, posición, ancho o visibilidad y añadir o quitar columnas.
-5. Pulsa **Guardar** para actualizar tu plantilla, o guarda una copia con otro nombre.
+La línea final acompaña al último producto y los totales bajan junto con la tabla. Las filas reservan espacio para los textos y los valores movidos. Al abrir un diseño anterior se corrige el anclaje de la línea inferior cuando se reconoce dentro del grupo de productos. Los elementos siguen siendo movibles y admiten **Deshacer**.
 
-Instalar la actualización no cambia por sí solo tus plantillas. El ajuste a la foto se aplica cuando lo eliges. Si no se reconocen las columnas, el ajuste conserva el diseño anterior y permite revisarlas manualmente.
+Los productos nuevos calculan su importe por defecto y actualizan la suma, incluso si los importes anteriores se conservaron del escaneo. En ese modo, se mantienen los importes de las otras filas. También se actualiza la suma al eliminar un producto.
 
-## Otras fotos y productos
+En **Diseño → Letra de todos los productos**, elige el tamaño común, por ejemplo **19**. Las descripciones, cantidades e importes lo comparten y los productos nuevos lo heredan. Si ya habías corregido individualmente la letra de las descripciones, se toma ese ajuste al preparar el diseño anterior. Al editar un texto de producto también está **Aplicar tamaño a todos los productos**; puedes desactivarlo para un ajuste individual.
 
-- Al importar una foto como **Crear plantilla completa nueva**, se analiza su propia estructura.
-- Importar solo productos conserva la distribución de la plantilla actual.
-- Los productos añadidos se colocan en las columnas guardadas. El código tiene un campo independiente si está separado en la foto.
-- Fecha y número pueden compartir una fila, caja/cajero otra y descuento/vuelto/importe otra, según lo reconocido. No se duplican títulos o números centrados ausentes en el original.
-- Los separadores reconocidos de la tabla se convierten en líneas editables entre renglones y acompañan a los productos al añadirlos.
-- Los títulos adicionales, como LOTE, se conservan como columnas de texto editable. No se infieren fórmulas de cálculo para esos datos.
+## Resumen como párrafo
 
-Se mantienen **Solo precios**, las plantillas guardadas, el logo/QR, el ajuste de letras al ancho, deshacer, PDF e impresión por Wi-Fi o USB. La foto se usa de referencia; la salida sigue siendo limpia, sin el papel fotografiado como fondo. El QR conserva su contenido al editar los importes.
+1. En **2. Vista previa**, toca el texto del resumen o pie.
+2. En **Alineación**, elige **Izquierda, Centro, Derecha o Justificado**.
+3. **Ajustar párrafo al ancho** reacomoda los renglones del escaneo dentro del cuadro y conserva los párrafos separados por una línea vacía y las viñetas. Desactívalo para mantener tus saltos de línea escritos.
+4. Pulsa **Aplicar** y después **Guardar** para conservar la plantilla.
 
-La detección depende del OCR y de la claridad y el recorte de la foto. Revisa valores y posiciones, sobre todo con formatos nuevos. La fuente exacta y la coincidencia física de la impresión requieren ajuste; no se garantiza una copia idéntica de cualquier boleta.
+## Fecha y hora del PDF
+
+En **Editar datos → Datos de la operación** está **Fecha y hora actuales al guardar PDF**, activada por defecto. Al terminar de elegir dónde guardar el PDF, se usa la hora local del teléfono y se actualiza también la vista previa.
+
+El PDF conserva esa misma fecha cuando lo vuelves a abrir. Cambiar manualmente el campo de fecha desactiva la opción automática; puedes volver a activarla.
+
+El PDF conserva sin pérdida el dibujo limpio de la vista previa, sin los controles del editor. Los textos mantienen sus posiciones y tamaños al abrir el archivo. Para editar el contenido, vuelve a la app y guarda nuevamente el PDF.
+
+## IGV, pago y vuelto
+
+- En **Importes**, activa el cálculo automático para actualizar cantidades, precios, descuentos, subtotal, IGV y total.
+- **Los precios incluyen IGV** obtiene la base y el impuesto desde el total. Desactívalo si corresponde añadir el IGV; se añade una sola vez.
+- En **Pago y vuelto**, escribe **Pagó con**. Se actualiza el vuelto y, si el pago no alcanza, se indica cuánto falta y el vuelto queda en cero.
+- Un pago vacío conserva el vuelto importado. También puedes desactivar el vuelto automático.
+- **Diseño** permite mostrar u ocultar **Pagó con**, y añadir el subtotal e IGV calculados cuando el diseño por campos no los incluía. Calcular IGV no obliga a añadir esas líneas visualmente.
+
+Ejemplo comprobado: productos por **S/ 15.10**, IGV incluido al 18 %, subtotal **S/ 12.80**, IGV **S/ 2.30**, pago **S/ 20.00** y vuelto **S/ 4.90**.
+
+## Columnas según cada foto
+
+Se mantienen las mejoras de 0.9: una importación completa reconoce los títulos, el orden y el espacio de las columnas de esa foto. **Plantillas → Ajustar distribución a la foto** permite corregir la distribución de una boleta ya guardada conservando sus precios; **Columnas de esta boleta** permite ajustar títulos, orden, posiciones y anchos.
+
+La foto sigue siendo una referencia. La salida utiliza el documento limpio y editable. El OCR y la tipografía pueden necesitar correcciones al comparar con el original.
 
 ## Validación
 
-Versión `0.9.0`, código `11`, paquete `com.boleta.editor`, arquitectura `arm64-v8a`. Compilación y firma verificadas; **98 pruebas automatizadas aprobadas**, sin fallos ni errores. Lint sin errores (39 advertencias).
+Versión `0.10.0`, código `12`, paquete `com.boleta.editor`, arquitectura `arm64-v8a`. Compilación y firma verificadas; **118 pruebas automatizadas aprobadas**, sin fallos ni errores. Lint sin errores (46 advertencias).
 
-Incluye casos de distintas distribuciones, columnas adicionales, filas de datos e importes, conservación de precios, edición del código por separado, guardado/lectura y posición de separadores al añadir productos. Las pruebas de reconocimiento utilizan posiciones de palabras sintéticas. Falta verificar OCR real, teclado/gestos e impresión en el teléfono y la POS-8001DD físicos.
+Se comprobaron cálculos, fecha local, conservación de datos, movimientos, altas/bajas de productos, alineación del pie, Deshacer y exportación desde la interfaz Android. El PDF de prueba es válido y la imagen extraída de él coincide **píxel por píxel** con el PNG de la vista previa limpia.
 
-Este repositorio contiene únicamente instaladores, sus ZIP, sumas SHA-256 y esta guía; no contiene fotos de boletas, sesiones, claves ni datos del teléfono. Consulta [SHA256SUMS.txt](SHA256SUMS.txt) para verificar los archivos. Las versiones anteriores se conservan como respaldo.
+Queda pendiente la prueba en un teléfono físico. La configuración y prueba de la impresora POS-8001DD se posponen por petición del usuario.
+
+Este repositorio contiene instaladores, sus ZIP, sumas SHA-256 y esta guía. No contiene fotos de boletas, claves ni datos del teléfono. Consulta [SHA256SUMS.txt](SHA256SUMS.txt) para verificar los archivos. Se conservan las versiones anteriores como respaldo.

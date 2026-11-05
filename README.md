@@ -1,41 +1,38 @@
-# Boleta Studio 0.7.1
+# Boleta Studio 0.8
 
-**[Descargar actualización 0.7.1 para Android](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.7.1.apk)**
+**[Descargar actualización 0.8 para Android](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.8.apk)**
 
-[Descargar el mismo APK en ZIP](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.7.1.zip)
+[Descargar el mismo APK en ZIP](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.8.zip)
 
-Esta corrección devuelve la plantilla limpia: **fondo blanco y todos los datos como textos editables**, conservando las posiciones de la foto. Solo el logo y el QR se dibujan como imágenes separadas.
+Esta versión vuelve al editor estructurado de la captura elegida por el usuario y corrige el **ancho**. Conserva los campos habituales, la presentación limpia, los productos y los controles de edición, movimiento y eliminación.
 
 ## Instalar como actualización
 
 1. Abre el enlace del APK en Chrome desde tu celular y acepta la descarga.
-2. En Chrome, abre **⋮ → Descargas** y toca `Boleta-Studio-0.7.1.apk`.
+2. En Chrome, abre **⋮ → Descargas** y toca `Boleta-Studio-0.8.apk`.
 3. Si Android solicita permiso para instalar desde Chrome, concédelo y regresa al instalador.
-4. Pulsa **Actualizar**, conservando instalada la aplicación anterior y sus plantillas.
+4. Pulsa **Actualizar**, conservando instalada la aplicación anterior y sus datos.
 
-Es un instalador de prueba para Android ARM64, Android 6 o posterior, con el mismo paquete y firma que las versiones anteriores. El ZIP contiene el mismo APK y debe extraerse primero. Los avisos automáticos dentro de la aplicación siguen pendientes.
+Es un instalador de prueba para Android ARM64, Android 6 o posterior, con el mismo paquete y firma que las versiones anteriores. El ZIP contiene el mismo APK y debe extraerse primero. Los avisos automáticos dentro de la app siguen pendientes.
 
-## Tu boleta actual
+## Ajustar el ancho
 
-Al abrir Boleta Studio, espera a que termine **Preparando plantilla limpia…** y entra en **2. Vista previa**. Las plantillas de 0.7 se convierten automáticamente conservando sus datos corregidos y posiciones; la foto del papel deja de imprimirse como fondo.
+1. Abre **2. Vista previa** y toca el texto que quieras ampliar.
+2. En la ventana de edición, utiliza **Ancho del cuadro** o **Usar todo el ancho**.
+3. Activa **Ajustar letras al ancho del cuadro** y pulsa **Aplicar**.
+4. Para la fecha y el número está **Fecha y boleta en la misma fila**: ajusta las letras para que quepan al costado y conserva Caja/turno en su renglón.
+5. Pulsa **Guardar** para conservar la plantilla.
 
-- En **1. Editar datos** puedes corregir los textos reconocidos, productos e importes.
-- En **2. Vista previa** toca un texto para editarlo. Las letras se ajustan al espacio y se conservan las filas.
-- **Mover**, el punto azul, la papelera y **Deshacer** permiten ajustar los elementos.
-- **Solo precios** actualiza los importes vinculados. Para un vínculo que falte, toca el valor y elige **Vincular dato**.
-- Si falta el logo o QR, utiliza **Añadir/Cambiar logo o QR → Recortar de la foto original**. Toca la imagen en la vista previa para ajustar posición y tamaño.
-- **Guardar** conserva la plantilla para reutilizarla.
+El punto azul derecho también modifica el ancho y activa el ajuste de letras. El área está limitada por el papel de impresión. Los demás campos y precios conservan sus datos.
 
-Para otra boleta, en **Importar foto** o **Tomar foto** elige **Crear plantilla nueva respetando la foto** y marca las cuatro esquinas del papel. La foto sirve para obtener las posiciones; el documento final se reconstruye sobre blanco.
+Se mantienen **1. Editar datos**, **Solo precios**, los productos, logo/QR, plantillas guardadas, PDF e impresión por Wi-Fi o USB. La importación vuelve a crear el documento estructurado del editor de la captura.
 
-En **Diseño** elige el ancho real del papel. Cambiarlo escala la distribución completa; los milímetros no se deducen solo de una foto. Selecciona el ancho de puntos correspondiente en la impresión térmica.
-
-Revisa el texto e importes del OCR: puede equivocarse u omitir datos. Puedes añadir lo que falte con **+ Añadir → Texto editable**. Con cálculo automático desactivado revisa los totales manualmente. El QR conserva su contenido original. La fuente limpia puede diferir de la original.
+Si venías de 0.7/0.7.1, se recupera la presentación estructurada. Las correcciones que se puedan ubicar de forma única se incorporan al dato correspondiente; las restantes están conservadas en **Texto OCR completo** para revisar. Se guarda un respaldo interno completo del documento anterior.
 
 ## Validación
 
-Versión `0.7.1`, código `9`, paquete `com.boleta.editor`, arquitectura `arm64-v8a`. Compilación y firma verificadas; 99 pruebas automatizadas aprobadas y lint sin errores. Se comprobó la conversión de una plantilla 0.7 sin perder textos corregidos y que las manchas de una foto no aparecen en la salida. Los casos espaciales y de extracción de imágenes usan datos sintéticos.
+Versión `0.8.0`, código `10`, paquete `com.boleta.editor`, arquitectura `arm64-v8a`. Compilación y firma verificadas; 79 pruebas automatizadas aprobadas y lint sin errores. Incluye las pruebas de la base 0.6 y casos nuevos de ancho, conservación del diseño/datos, filas de fecha/número, guardado y recuperación de versiones posteriores.
 
-Falta validar OCR real, teclado/gestos e impresión en el teléfono y la POS-8001DD físicos. Haz una primera impresión de prueba. Es una versión de prueba distribuida fuera de Google Play.
+Falta verificar teclado/gestos, OCR real e impresión en el teléfono y la POS-8001DD físicos. Revisa la primera impresión. Es una versión de prueba distribuida fuera de Google Play.
 
-Este repositorio contiene únicamente instaladores, sus ZIP, sumas SHA-256 y esta guía; no contiene fotos de boletas, sesiones, claves ni datos del teléfono. Consulta [SHA256SUMS.txt](SHA256SUMS.txt) para verificar los archivos. Se conservan las versiones anteriores como respaldo.
+Este repositorio contiene únicamente instaladores, sus ZIP, sumas SHA-256 y esta guía; no contiene fotos de boletas, sesiones, claves ni datos del teléfono. Consulta [SHA256SUMS.txt](SHA256SUMS.txt) para verificar los archivos. Las versiones anteriores se conservan como respaldo.

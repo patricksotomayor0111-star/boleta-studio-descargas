@@ -1,78 +1,63 @@
-# Boleta Studio 0.10.2
+# Boleta Studio para Android
 
-**[Descargar actualización 0.10.2 para Android](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.10.2.apk)**
+## Descargar actualización 0.11.0
 
-[Descargar el mismo APK en ZIP](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.10.2.zip)
+[Descargar APK para Android — aproximadamente 24 MB](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.11.apk)
 
-Esta actualización corrige el hueco que persistía entre **Dato de la foto** y la fecha. En ese caso el espacio estaba dentro de los datos de operación: 0.10.1 solamente ajustaba el margen exterior.
-
-Ahora se acercan también las filas internas separadas por espacios grandes. Se mantienen juntos fecha/boleta y caja/cajero, y se conservan el texto del dato adicional, los importes y las posiciones horizontales. Las plantillas ya procesadas por 0.10.1 se revisan de nuevo al abrir la vista previa.
-
-## Quitar el espacio en blanco
-
-1. Instala la actualización y abre tu boleta en **2. Vista previa**.
-2. La app revisa los huecos exteriores e interiores de los datos. Junta las filas separadas por espacios grandes y conserva los campos que comparten renglón.
-3. También puedes usar **Plantillas → Quitar espacio antes de la fecha**, que también corrige los huecos internos. **Deshacer** recupera el espaciado anterior al usar esta opción.
-4. Pulsa **Guardar** para conservar el ajuste en tu plantilla con nombre.
-
-La fecha se acerca al encabezado y los productos y totales suben con ella. Se conservan textos, precios, imágenes y posiciones horizontales. Después del ajuste, el alto del encabezado se adapta al texto al volver a editarlo. El espaciado corregido se comparte entre vista previa y PDF.
-
-La comprobación automática conserva los espacios que ya eran pequeños y evita cubrir textos o separadores colocados expresamente en esa zona.
-
-## Instalar como actualización
+[Descargar el mismo APK comprimido en ZIP](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.11.zip)
 
 1. Abre el enlace del APK en Chrome desde tu celular y acepta la descarga.
-2. En Chrome, abre **⋮ → Descargas** y toca `Boleta-Studio-0.10.2.apk`.
-3. Si Android solicita permiso para instalar desde Chrome, concédelo y vuelve al instalador.
-4. Pulsa **Actualizar**. Conserva instalada la aplicación anterior para mantener tus datos.
+2. En Chrome, abre **⋮ → Descargas** y toca `Boleta-Studio-0.11.apk`.
+3. Si Android pide permiso para instalar desde Chrome, concédelo y vuelve al instalador.
+4. Pulsa **Actualizar**. Conserva instalada la aplicación anterior para mantener tus datos y plantillas.
 
-Android ARM64, Android 6 o posterior, mismo paquete y firma que las versiones anteriores. El ZIP contiene el mismo APK y debe extraerse primero. Los avisos automáticos dentro de la app siguen pendientes.
+Android ARM64, Android 6 o posterior. Mismo paquete y firma que las versiones anteriores. El ZIP contiene el mismo APK y debe extraerse primero. Los avisos automáticos dentro de la app siguen pendientes.
 
-## Productos encima de la línea
+## Varios códigos de barras y QR
 
-La línea final acompaña al último producto y los totales bajan junto con la tabla. Las filas reservan espacio para los textos y los valores movidos. Al abrir un diseño anterior se corrige el anclaje de la línea inferior cuando se reconoce dentro del grupo de productos. Los elementos siguen siendo movibles y admiten **Deshacer**.
+Abre **Plantillas → Códigos de barras y QR**. Puedes añadir un código escribiendo su contenido, leer una imagen o recortar uno de la foto original. También está **Vista previa → + Añadir → Código de barras o QR**.
 
-Los productos nuevos calculan su importe por defecto y actualizan la suma, incluso si los importes anteriores se conservaron del escaneo. En ese modo, se mantienen los importes de las otras filas. También se actualiza la suma al eliminar un producto.
+Cada código guarda por separado su tipo, número completo, ceros iniciales, posición, ancho, alto y textos encima/debajo. Los códigos que se pueden leer se reconstruyen con barras nítidas y margen blanco. EAN y UPC requieren el número completo con su dígito de control. En la vista previa puedes moverlos, ensancharlos, llevarlos a la papelera y recuperarlos con **Deshacer**.
 
-En **Diseño → Letra de todos los productos**, elige el tamaño común, por ejemplo **19**. Las descripciones, cantidades e importes lo comparten y los productos nuevos lo heredan. Si ya habías corregido individualmente la letra de las descripciones, se toma ese ajuste al preparar el diseño anterior. Al editar un texto de producto también está **Aplicar tamaño a todos los productos**; puedes desactivarlo para un ajuste individual.
+Una importación completa de foto intenta leer sus códigos automáticamente. Si un recorte no se puede leer, se conserva como imagen para revisarlo; puedes escribir el contenido completo y elegir el tipo para reconstruirlo. Las opciones para actualizar MONTO o la fecha cambian esos rótulos impresos y conservan el contenido original del código.
 
-## Resumen como párrafo
+## Reverso dentro de la misma plantilla
 
-1. En **2. Vista previa**, toca el texto del resumen o pie.
-2. En **Alineación**, elige **Izquierda, Centro, Derecha o Justificado**.
-3. **Ajustar párrafo al ancho** reacomoda los renglones del escaneo dentro del cuadro y conserva los párrafos separados por una línea vacía y las viñetas. Desactívalo para mantener tus saltos de línea escritos.
-4. Pulsa **Aplicar** y después **Guardar** para conservar la plantilla.
+1. Pulsa **Reverso** en la pantalla principal.
+2. Usa **Importar reverso**, ajusta las cuatro esquinas y revisa los textos reconocidos.
+3. En **Editar datos**, corrige el texto superior, condiciones y mensaje final. En **Logo**, importa o recorta el logo por separado.
+4. **Mover diseño** permite mover y editar textos, cambiar su alineación y añadir/quitar líneas. **Orden y tamaños** reorganiza los bloques.
+5. **Vista completa** muestra el reverso con el mismo ancho y largo del frente. Activa **Repetir diseño** si quieres repetir el módulo a lo largo del papel.
+6. Pulsa **Guardar**, vuelve al frente y usa **Guardar** en la vista previa para guardar o actualizar la plantilla con nombre.
 
-## Fecha y hora del PDF
+Frente, reverso y códigos se guardan juntos. Si el rollo ya trae publicidad al reverso, puedes guardar e imprimir solo el frente.
 
-En **Editar datos → Datos de la operación** está **Fecha y hora actuales al guardar PDF**, activada por defecto. Al terminar de elegir dónde guardar el PDF, se usa la hora local del teléfono y se actualiza también la vista previa.
+## PDF de una o dos caras
 
-El PDF conserva esa misma fecha cuando lo vuelves a abrir. Cambiar manualmente el campo de fecha desactiva la opción automática; puedes volver a activarla.
+Con el reverso activado, **Guardar PDF** ofrece **Solo frente**, **Solo reverso** o **Ambas caras**. Ambas genera dos páginas del mismo tamaño, una por cara. El PDF conserva las imágenes limpias de las vistas previas sin los controles del editor y sin sustituir sus letras.
 
-El PDF conserva sin pérdida el dibujo limpio de la vista previa, sin los controles del editor. Los textos mantienen sus posiciones y tamaños al abrir el archivo. Para editar el contenido, vuelve a la app y guarda nuevamente el PDF.
+La fecha y hora actuales se toman al guardar el PDF si esa opción está activada. El archivo guardado conserva ese instante. La preparación y prueba de la impresora física se revisarán después, según lo acordado.
 
-## IGV, pago y vuelto
+## Productos, IGV, pago y vuelto
 
-- En **Importes**, activa el cálculo automático para actualizar cantidades, precios, descuentos, subtotal, IGV y total.
-- **Los precios incluyen IGV** obtiene la base y el impuesto desde el total. Desactívalo si corresponde añadir el IGV; se añade una sola vez.
-- En **Pago y vuelto**, escribe **Pagó con**. Se actualiza el vuelto y, si el pago no alcanza, se indica cuánto falta y el vuelto queda en cero.
-- Un pago vacío conserva el vuelto importado. También puedes desactivar el vuelto automático.
-- **Diseño** permite mostrar u ocultar **Pagó con**, y añadir el subtotal e IGV calculados cuando el diseño por campos no los incluía. Calcular IGV no obliga a añadir esas líneas visualmente.
+Cada producto permite seleccionar **Gravado**, **Exonerado** o **Inafecto**, y un porcentaje de IGV propio opcional. En **Importes**, el cálculo automático actualiza los importes, las tres bases, el IGV, el total, el total en letras y las unidades. El descuento general se reparte proporcionalmente antes de calcular el impuesto.
 
-Ejemplo comprobado: productos por **S/ 15.10**, IGV incluido al 18 %, subtotal **S/ 12.80**, IGV **S/ 2.30**, pago **S/ 20.00** y vuelto **S/ 4.90**.
+**Los precios incluyen IGV** obtiene la base y el impuesto desde el total. Desactívalo si corresponde añadir el IGV. En **Pago y vuelto**, escribe **Pagó con** y la forma de pago; se calcula el vuelto y, si falta dinero, se muestra el saldo pendiente. Un pago vacío conserva el vuelto importado.
 
-## Columnas según cada foto
+Se reconocen también recibos como el ejemplo Makro: código y descripción seguidos de cantidad/precio/importe sin un encabezado de columnas. Se conservan los rótulos de sus operaciones, total en letras, unidades y forma de pago. El texto y la distribución reconocidos pueden necesitar correcciones al compararlos con la foto.
 
-Se mantienen las mejoras de 0.9: una importación completa reconoce los títulos, el orden y el espacio de las columnas de esa foto. **Plantillas → Ajustar distribución a la foto** permite corregir la distribución de una boleta ya guardada conservando sus precios; **Columnas de esta boleta** permite ajustar títulos, orden, posiciones y anchos.
+## Mejoras anteriores conservadas
 
-La foto sigue siendo una referencia. La salida utiliza el documento limpio y editable. El OCR y la tipografía pueden necesitar correcciones al comparar con el original.
+Los productos nuevos se colocan antes de la línea de cierre; los totales acompañan la tabla. Los textos, precios y líneas son movibles y editables en la vista previa, con papelera y Deshacer. **Diseño → Letra de todos los productos** fija un tamaño común. El resumen admite alineación izquierda, centro, derecha y justificada.
+
+Las plantillas anteriores siguen disponibles. Se mantienen los ajustes de ancho y columnas según la foto y la corrección del hueco antes de la fecha. **Plantillas → Quitar espacio antes de la fecha** permite aplicarla manualmente, con Deshacer.
 
 ## Validación
 
-Versión `0.10.2`, código `14`, paquete `com.boleta.editor`, arquitectura `arm64-v8a`. Compilación y firma verificadas; **140 pruebas automatizadas aprobadas**, sin fallos ni errores. Lint sin errores (46 advertencias).
+Versión `0.11.0`, código `15`, paquete `com.boleta.editor`, arquitectura `arm64-v8a`. Compilación y firma comprobadas. **162 pruebas automatizadas aprobadas**, sin fallos, errores ni omitidas. Lint: 0 errores y 69 advertencias.
 
-Se reprodujo el caso de Dato de la foto encima de fecha/boleta: el hueco interno pasó de 180 a 6 puntos. Se comprobaron actualización desde 0.10.1, varias filas, conservación del texto y los valores, ajuste manual, Deshacer y reapertura. También se mantienen las pruebas de cálculos, fecha local, datos, movimientos, productos, pie y PDF. El PDF de prueba es válido y la imagen extraída de él coincide **píxel por píxel** con el PNG de la vista previa limpia.
+Se comprobaron códigos, ceros iniciales, dígitos de control, movimientos, persistencia de ambas caras, plantillas antiguas, interfaz de edición, cálculos mixtos y elección de páginas del PDF. Los PDF se validaron con un lector estricto: una imagen por página, dimensiones iguales entre caras e imágenes extraídas idénticas píxel por píxel a sus respectivas vistas previas.
 
-Queda pendiente la prueba en un teléfono físico. La configuración y prueba de la impresora POS-8001DD se posponen por petición del usuario.
+Quedan pendientes las pruebas en el teléfono físico, incluido el reconocimiento ML Kit desde cámara. Las pruebas automáticas de lectura de códigos usan ZXing. La impresora física sigue pendiente por petición del usuario.
 
-Este repositorio contiene instaladores, sus ZIP, sumas SHA-256 y esta guía. No contiene fotos de boletas, claves ni datos del teléfono. Consulta [SHA256SUMS.txt](SHA256SUMS.txt) para verificar los archivos. Se conservan las versiones anteriores como respaldo.
+Este repositorio contiene instaladores, sus ZIP, sumas SHA-256 y esta guía. No contiene fotos de boletas, claves ni datos del teléfono. Consulta [SHA256SUMS.txt](SHA256SUMS.txt) para verificar los archivos. Se conservan los instaladores anteriores como respaldo.

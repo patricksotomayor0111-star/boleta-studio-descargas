@@ -54,7 +54,7 @@ Las plantillas anteriores siguen disponibles. Se mantienen los ajustes de ancho 
 
 ## Validación
 
-Versión `0.11.0`, código `15`, paquete `com.boleta.editor`, arquitectura `arm64-v8a`. Compilación y firma comprobadas. **162 pruebas automatizadas aprobadas**, sin fallos, errores ni omitidas. Lint: 0 errores y 69 advertencias.
+Versión `0.11.0`, código `15`, paquete `com.boleta.editor`, arquitectura `arm64-v8a`. Compilación y firma comprobadas. **163 pruebas automatizadas aprobadas**, sin fallos, errores ni omitidas. Lint: 0 errores y 69 advertencias.
 
 Se comprobaron códigos, ceros iniciales, dígitos de control, movimientos, persistencia de ambas caras, plantillas antiguas, interfaz de edición, cálculos mixtos y elección de páginas del PDF. Los PDF se validaron con un lector estricto: una imagen por página, dimensiones iguales entre caras e imágenes extraídas idénticas píxel por píxel a sus respectivas vistas previas.
 

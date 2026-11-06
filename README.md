@@ -1,17 +1,25 @@
 # Boleta Studio para Android
 
-## Descargar actualización 0.11.0
+## Descargar actualización 0.11.1
 
-[Descargar APK para Android — aproximadamente 24 MB](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.11.apk)
+[Descargar APK para Android — aproximadamente 24 MB](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.11.1.apk)
 
-[Descargar el mismo APK comprimido en ZIP](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.11.zip)
+[Descargar el mismo APK comprimido en ZIP](https://github.com/patricksotomayor0111-star/boleta-studio-descargas/raw/refs/heads/main/Boleta-Studio-0.11.1.zip)
 
 1. Abre el enlace del APK en Chrome desde tu celular y acepta la descarga.
-2. En Chrome, abre **⋮ → Descargas** y toca `Boleta-Studio-0.11.apk`.
+2. En Chrome, abre **⋮ → Descargas** y toca `Boleta-Studio-0.11.1.apk`.
 3. Si Android pide permiso para instalar desde Chrome, concédelo y vuelve al instalador.
 4. Pulsa **Actualizar**. Conserva instalada la aplicación anterior para mantener tus datos y plantillas.
 
 Android ARM64, Android 6 o posterior. Mismo paquete y firma que las versiones anteriores. El ZIP contiene el mismo APK y debe extraerse primero. Los avisos automáticos dentro de la app siguen pendientes.
+
+## Generar el número de un producto
+
+En **1. Editar datos**, toca el producto GLOR, ARO u otro con código separado. Debajo del campo **Código**, pulsa **Generar código** y después **Guardar**.
+
+**Cantidad de dígitos del código** toma la longitud del código actual: por ejemplo, 13. En un producto nuevo usa la de otro producto de la plantilla, o 13 si no hay referencia. Puedes cambiarla entre 1 y 32. Se conservan los ceros iniciales y se evitan números repetidos dentro de la boleta. Cancelar conserva el código previo.
+
+El número generado queda guardado con el producto y la plantilla. Cambiar precios, abrir la vista previa o guardar el PDF no lo regenera. Esta función crea identificadores internos para los productos; no modifica el QR ni los códigos inferiores. Esta actualización se centra en el generador; los ajustes adicionales de campos e importes de la nueva foto todavía están pendientes.
 
 ## Varios códigos de barras y QR
 
@@ -54,7 +62,7 @@ Las plantillas anteriores siguen disponibles. Se mantienen los ajustes de ancho 
 
 ## Validación
 
-Versión `0.11.0`, código `15`, paquete `com.boleta.editor`, arquitectura `arm64-v8a`. Compilación y firma comprobadas. **163 pruebas automatizadas aprobadas**, sin fallos, errores ni omitidas. Lint: 0 errores y 69 advertencias.
+Versión `0.11.1`, código `16`, paquete `com.boleta.editor`, arquitectura `arm64-v8a`. Compilación y firma comprobadas. **168 pruebas automatizadas aprobadas**, sin fallos, errores ni omitidas. Lint: 0 errores y 69 advertencias.
 
 Se comprobaron códigos, ceros iniciales, dígitos de control, movimientos, persistencia de ambas caras, plantillas antiguas, interfaz de edición, cálculos mixtos y elección de páginas del PDF. Los PDF se validaron con un lector estricto: una imagen por página, dimensiones iguales entre caras e imágenes extraídas idénticas píxel por píxel a sus respectivas vistas previas.
 
